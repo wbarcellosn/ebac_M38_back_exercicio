@@ -1,0 +1,16 @@
+C:\Curso_EBAC-Projetos\02 - Back-End\Módulo 38 - Criando um projeto monolítico para web\Exercicio-M38-Back\exercicio-modulo-38-back\src\main\java\com\wbarcellos\service\generic\GenericService.java
+C:\Curso_EBAC-Projetos\02 - Back-End\Módulo 38 - Criando um projeto monolítico para web\Exercicio-M38-Back\exercicio-modulo-38-back\src\main\java\com\wbarcellos\exceptions\TipoChaveNaoEncontradaException.java
+C:\Curso_EBAC-Projetos\02 - Back-End\Módulo 38 - Criando um projeto monolítico para web\Exercicio-M38-Back\exercicio-modulo-38-back\src\main\java\com\wbarcellos\exceptions\TableException.java
+C:\Curso_EBAC-Projetos\02 - Back-End\Módulo 38 - Criando um projeto monolítico para web\Exercicio-M38-Back\exercicio-modulo-38-back\src\main\java\com\wbarcellos\domain\Persistente.java
+C:\Curso_EBAC-Projetos\02 - Back-End\Módulo 38 - Criando um projeto monolítico para web\Exercicio-M38-Back\exercicio-modulo-38-back\src\main\java\com\wbarcellos\service\generic\IGenericService.java
+C:\Curso_EBAC-Projetos\02 - Back-End\Módulo 38 - Criando um projeto monolítico para web\Exercicio-M38-Back\exercicio-modulo-38-back\src\main\java\com\wbarcellos\exceptions\TipoElementoNaoConhecidoException.java
+C:\Curso_EBAC-Projetos\02 - Back-End\Módulo 38 - Criando um projeto monolítico para web\Exercicio-M38-Back\exercicio-modulo-38-back\src\main\java\com\wbarcellos\exceptions\MaisDeUmRegistroException.java
+C:\Curso_EBAC-Projetos\02 - Back-End\Módulo 38 - Criando um projeto monolítico para web\Exercicio-M38-Back\exercicio-modulo-38-back\src\main\java\com\wbarcellos\dao\generic\GenericDAO.java
+C:\Curso_EBAC-Projetos\02 - Back-End\Módulo 38 - Criando um projeto monolítico para web\Exercicio-M38-Back\exercicio-modulo-38-back\src\main\java\com\wbarcellos\service\FornecedorService.java
+C:\Curso_EBAC-Projetos\02 - Back-End\Módulo 38 - Criando um projeto monolítico para web\Exercicio-M38-Back\exercicio-modulo-38-back\src\main\java\com\wbarcellos\exceptions\DAOException.java
+C:\Curso_EBAC-Projetos\02 - Back-End\Módulo 38 - Criando um projeto monolítico para web\Exercicio-M38-Back\exercicio-modulo-38-back\src\main\java\com\wbarcellos\dao\generic\IGenericDAO.java
+C:\Curso_EBAC-Projetos\02 - Back-End\Módulo 38 - Criando um projeto monolítico para web\Exercicio-M38-Back\exercicio-modulo-38-back\src\main\java\com\wbarcellos\dao\IFornecedorDAO.java
+C:\Curso_EBAC-Projetos\02 - Back-End\Módulo 38 - Criando um projeto monolítico para web\Exercicio-M38-Back\exercicio-modulo-38-back\src\main\java\com\wbarcellos\service\IFornecedorService.java
+C:\Curso_EBAC-Projetos\02 - Back-End\Módulo 38 - Criando um projeto monolítico para web\Exercicio-M38-Back\exercicio-modulo-38-back\src\main\java\com\wbarcellos\controller\FornecedorController.java
+C:\Curso_EBAC-Projetos\02 - Back-End\Módulo 38 - Criando um projeto monolítico para web\Exercicio-M38-Back\exercicio-modulo-38-back\src\main\java\com\wbarcellos\dao\FornecedorDAO.java
+C:\Curso_EBAC-Projetos\02 - Back-End\Módulo 38 - Criando um projeto monolítico para web\Exercicio-M38-Back\exercicio-modulo-38-back\src\main\java\com\wbarcellos\domain\Fornecedor.java

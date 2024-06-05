@@ -1,0 +1,16 @@
+com\wbarcellos\domain\Fornecedor.class
+com\wbarcellos\domain\Persistente.class
+com\wbarcellos\service\generic\GenericService.class
+com\wbarcellos\controller\FornecedorController.class
+com\wbarcellos\service\FornecedorService.class
+com\wbarcellos\exceptions\TipoElementoNaoConhecidoException.class
+com\wbarcellos\service\IFornecedorService.class
+com\wbarcellos\exceptions\TableException.class
+com\wbarcellos\dao\FornecedorDAO.class
+com\wbarcellos\exceptions\MaisDeUmRegistroException.class
+com\wbarcellos\dao\generic\GenericDAO.class
+com\wbarcellos\dao\generic\IGenericDAO.class
+com\wbarcellos\exceptions\DAOException.class
+com\wbarcellos\exceptions\TipoChaveNaoEncontradaException.class
+com\wbarcellos\dao\IFornecedorDAO.class
+com\wbarcellos\service\generic\IGenericService.class

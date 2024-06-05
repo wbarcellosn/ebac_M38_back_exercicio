@@ -1,0 +1,134 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core"
+	xmlns:p="http://primefaces.org/ui">
+<f:view>
+	<h:head>
+		<h:outputStylesheet>
+            th, td {
+                text-align: center;
+            }
+
+            h3 {
+                margin-top: 0;
+                text-align: center;
+            }
+
+            input[type="text"] {
+                width: 100%;
+                box-sizing: border-box;
+                -webkit-box-sizing:border-box;
+                -moz-box-sizing: border-box;
+            }
+
+        </h:outputStylesheet>
+	</h:head>
+	<h:body>
+		<p:outputPanel>
+			<h3>Clientes cadastrados</h3>
+			<div class="ui-g">
+				<div class="ui-g-2" />
+				<div class="ui-g-8">
+					<h:form id="suppliers">
+						<p:growl id="growl" sticky="true" />
+
+						<p:dataTable id="supplierList" var="supplier"
+							value="#{fornecedorController.fornecedores}">
+							<p:column headerText="Id">
+								<h:outputText value="#{supplier.id}" />
+							</p:column>
+
+							<p:column headerText="Nome">
+								<h:outputText id="nomeInput" value="#{supplier.nome}" />
+							</p:column>
+
+							<p:column headerText="CNPJ">
+								<h:outputText id="cnpjInput" value="#{supplier.cnpj}" />
+							</p:column>
+							
+							<p:column headerText="Telefone">
+								<h:outputText id="telInput" value="#{supplier.tel}" />
+							</p:column>
+
+							<p:column headerText="Email">
+								<h:outputText id="emailInput" value="#{supplier.email}" />
+							</p:column>
+
+							<p:column>
+								<p:commandButton update="supplierList add" value="Editar"
+									icon="ui-icon-closethick"
+									action="#{fornecedorController.edit(supplier)}"
+									styleClass="ui-icon-pencil">
+								</p:commandButton>
+							</p:column>
+							<p:column>
+								<p:commandButton update="supplierList" value="Delete"
+									icon="ui-icon-closethick"
+									action="#{fornecedorController.delete(supplier)}"
+									styleClass="ui-priority-primary">
+									<p:confirm header="Atenção" message="Tem certeza que deseja excluir este cliente?" icon="pi pi-exclamation-triangle"/>
+								</p:commandButton>
+							</p:column>
+						</p:dataTable>
+						<br />
+						<p:confirmDialog global="true" showEffect="fade" hideEffect="fade" responsive="true" width="350">
+				            <p:commandButton value="Não" type="button" styleClass="ui-confirmdialog-no ui-button-flat"/>
+				            <p:commandButton value="Sim" type="button" styleClass="ui-confirmdialog-yes" />
+				        </p:confirmDialog>
+					</h:form>
+				</div>
+				<div class="ui-g-2"></div>
+			</div>
+			<h3>Criar novo cliente</h3>
+			<div class="ui-g">
+				<div class="ui-g-2"></div>
+				<div class="ui-g-8">
+					<h:form id="add">
+						<h:panelGrid columns="3" cellpadding="5" style="margin: 0 auto;">
+							<p:outputLabel for="Nome" value="Nome" />
+							<p:inputText id="Nome"
+								value="#{fornecedorController.fornecedor.nome}" required="true" />
+							<p:message for="Nome" />
+							
+							<p:outputLabel for="cpf" value="CPF" />
+							<p:inputText id="cpf" value="#{fornecedorController.fornecedor.cnpj}"
+								size="11" maxlength="11" required="true" />
+							<p:message for="cpf" />
+	
+							<p:outputLabel for="tel" value="Telefone" />
+							<p:inputText id="tel"
+								value="#{fornecedorController.fornecedor.tel}" required="true">
+							</p:inputText>
+							<p:message for="tel" />
+
+							<p:outputLabel for="email" value="E-Mail" />
+							<p:inputText id="email"
+								value="#{fornecedorController.fornecedor.email}" required="true">
+							</p:inputText>
+							<p:message for="email" />
+
+							<p:commandButton update="@form :suppliers:supplierList"
+								value="Cadastrar" action="#{fornecedorController.add}"
+								rendered="#{!fornecedorController.isUpdate}">
+							</p:commandButton>
+							
+							<p:commandButton update="@form :suppliers:supplierList"
+								value="Atualizar" action="#{fornecedorController.update}"
+								rendered="#{fornecedorController.isUpdate}">
+							</p:commandButton>
+							
+							<p:commandButton update="add"
+								value="Cancelar" action="#{fornecedorController.cancel}"
+								immediate="true">
+								<f:ajax render="add" resetValues="true"/>
+							</p:commandButton>
+						</h:panelGrid>
+						<!-- <h:messages errorStyle="color:red;margin:8px;"></h:messages> -->
+					</h:form>
+				</div>
+				<div class="ui-g-2"></div>
+			</div>
+		</p:outputPanel>
+	</h:body>
+</f:view>
+</html>
